@@ -4,10 +4,10 @@
 ## cache its inverse
 
 makeCacheMatrix <- function(x = matrix()) {
-  m <- NULL
+  s <- NULL
   set <- function(y) {
     x <<- y
-    m <<- NULL
+    s <<- NULL
   }
   get <- function() x
   setinverse <- function(solve) s <<- solve
